@@ -87,187 +87,9 @@ header {
   right: 20px;
   cursor: pointer;
 }
-/* 📱 Mobil Görünüm (320px – 767px) */
-@media (min-width: 320px) and (max-width: 767px) {
-  /* Menü butonu görünür */
-  .menu-button {
-    display: block;
-    margin-left: 300px;
-  }
-  header {
-    width: 320px;
-    height: 75px;
-  }
-  html,
-  body {
-    width: 100%;
-    overflow-x: hidden; /* sağa sola kaymayı engeller */
-    overflow-y: auto; /* yukarı-aşağı kayma serbest */
-  }
-  .btn {
-    position: absolute;
-    left: 80px;
-    top: 400px;
-  }
 
-  .hero {
-    text-align: left;
-    width: 320px;
-    height: 432px;
-    
-  }
-  h1 {
-    position: absolute;
-    left: 20px;
-
-  }
- 
-
- 
-  .features-section {
-    display: flex;
-  }
-  header,
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 16px;
-  }
-  .topicon {
-    visibility: hidden;
-  }
-  .team-info .social {
-    display: block;
-    margin-bottom: 20px;
-  }
-  .features-name {
-    margin-top: -140px;
-    text-align: center;
-  }
-  .logo.logo-accent {
-    margin: 0;
-    padding: 0;
-  }
-  .hero {
-    text-align: left; /* Metinleri sola hizala */
-    align-items: flex-start; /* Flex içeriğini sola hizala */
-    padding: 100px 20px; /* Kenarlardan boşluk ekle */
-  }
-
-  /* Normal menü (header içindeki nav + address) gizlenir */
-  header nav,
-  header address {
-    display: none;
-  }
-
-  /* Mobil menü kapalı durumda gizlenir */
-  .mobile-nav {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-
-  /* Toggle aktif olduğunda mobil menü görünür */
-  #mobile-menu-toggle:checked ~ .mobile-nav {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  /* Menü açıldığında hamburger ikon gizlensin */
-  #mobile-menu-toggle:checked ~ header .menu-button {
-    opacity: 0;
-    visibility: hidden;
-  }
-  #mobile-menu-toggle:checked .btn {
-    opacity: 0;
-    visibility: hidden;
-  }
-  .team {
-    background-color: #f4f4fd; /* arka plan aynı */
-  }
-  .team .container {
-    width: 100%;
-    margin: 0;
-    padding-left: 16px; /* ekran kenarına yapışmasın */
-  }
-
-  .team ul {
-    display: flex;
-    flex-direction: column; /* alt alta */
-    align-items: flex-start; /* sola hizala */
-    gap: 24px;
-    padding: 0;
-    margin: 0;
-  }
-
-  .team li {
-    background-color: #fff;
-    width: 264px; /* istediğin ölçü */
-    height: 428px; /* istediğin yükseklik */
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    display: flex;
-    flex-direction: column;
-  }
-
-  .team-info {
-    display: block;
-    text-align: left;
-    padding: 16px;
-  }
-
-  .team-info img {
-    width: 100%; /* resim kartın genişliğine uyum sağlar */
-
-    object-fit: cover;
-  }
-
-  .team-name {
-    text-align: left;
-  }
-
-  .social {
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 16px;
-    gap: 16px;
-  }
-  .portfolio{
-    position: relative;
-    width: 288px;
-    height: 2752px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
-  
-}
-
-/* 💻 Tablet Görünüm (768px – 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Mobil buton gizli */
-  .menu-button {
-    display: none;
-  }
-
-  /* Mobil menü kapalı */
-  .mobile-nav {
-    display: none;
-  }
-
-  /* Header menüsü görünsün */
-  header nav,
-  header address {
-    display: flex;
-  }
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* 🖥️ Masaüstü Görünüm (1024px ve üzeri) */
-@media (min-width: 1024px) {
+/*
+@media (min-width: 1158px) {
   .menu-button {
     display: none;
   }
@@ -280,7 +102,7 @@ header {
   header address {
     display: flex;
   }
-}
+}*/
 
 .header-container {
   display: flex;
@@ -339,7 +161,7 @@ header address a {
   color: #f4f4fd;
 }
 .container {
-  width: 1158px;
+  align-items: center;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -357,7 +179,7 @@ header address a {
   flex-direction: column;
   align-items: center;
   line-height: 1.5;
-  background-image: url("../images/people-office\ 1.jpg");
+  background-image: url("/images/Dark-bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -535,8 +357,7 @@ header address a {
 
 .portfolio ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   flex-wrap: wrap;
   gap: 24px;
   padding: 0;
@@ -557,15 +378,15 @@ header address a {
   padding: 16px 32px;
   gap: 8px;
 }
-.portfolio-name + .portfolio-name {
-  margin-top: -24px;
-  font-size: 16px;
-}
+
 .portfolio li {
-  position: relative;
   border: 1px solid #e7e9fc;
   padding-bottom: 16px;
   overflow: hidden;
+  width: 360px;
+  height: 420px;
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio li::after {
@@ -578,11 +399,6 @@ header address a {
   border-radius: 0 0 8px 8px;
   pointer-events: none;
   z-index: 1;
-}
-
-.portfolio li > * {
-  position: relative;
-  z-index: 2;
 }
 
 .portfolio li:hover {
@@ -890,4 +706,241 @@ textarea::placeholder {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+}
+/* 📱 Mobil Görünüm (320px – 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+  .menu-button {
+    display: block;
+    left: 300px;
+    padding-block-start: 12pt;
+    right: clamp(100px, 10vw, 300px);
+  }
+  header a {
+    position: absolute;
+    display: flex;
+    align-items: left;
+    left: 16px;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .effective {
+    flex-direction: column;
+    gap: 8px;
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.4;
+    word-spacing: 9999px;
+    overflow-wrap: break-word;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+  .close-x {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #e7e9fc;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    position: fixed;
+    left: 334px;
+    top: 28px;
+  }
+  .close-x:hover {
+    background-color: #404bbf;
+  }
+
+  .icon-icon-close {
+    width: 8px;
+    height: 8px;
+    fill: #2e2f42;
+  }
+
+  .hero {
+    background-image: none;
+    text-align: center;
+    background-image: url("/images/Dark-bg-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .features-section {
+    margin-top: 200px;
+  }
+
+  .topicon {
+    visibility: hidden;
+  }
+
+  .features-name {
+    text-align: center;
+    padding: 8px;
+    margin-top: -140px;
+  }
+
+  header nav,
+  header address {
+    display: none;
+  }
+
+  .mobile-nav {
+    opacity: 0;
+    visibility: hidden;
+    align-items: start;
+    text-align: start;
+    justify-content: start;
+    padding: 20px;
+    z-index: 9999;
+  }
+  .mobile-nav ul {
+    padding: 20px;
+  }
+  .mobile-nav .social .social-icon-wrapper {
+    position: relative;
+    right: 40px;
+    margin: 20px;
+  }
+
+  #mobile-menu-toggle:checked ~ .mobile-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #mobile-menu-toggle:checked ~ header .menu-button {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .team {
+    background-color: #f4f4fd;
+  }
+
+  .team .container {
+    align-items: center;
+  }
+
+  .team ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-info img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .social {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 16px;
+    gap: 16px;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .footer .flow {
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  .asocial {
+    padding: 100px;
+    align-items: center;
+    gap: 12px;
+  }
+  .altsocial {
+    position: relative;
+    display: flex;
+    right: 22px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+
+  .altsociala {
+    display: flex;
+    text-align: center;
+    position: relative;
+    left: 240px;
+    bottom: 32px;
+  }
+
+  .asocial-icon-wrapper {
+    display: block;
+    gap: 40px;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .subscribe label {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .subbutton {
+    margin-left: 0;
+  }
+
+  footer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  }
+  .modal-content {
+    height: 623px;
+  }
+  .social {
+    position: relative;
+    left: 28px;
+  }
+  .nav-linka {
+    position: relative;
+    right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .menu-button {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .hero {
+    background-image: url("/images/Dark-bg-3.jpg");
+  }
+
+  .topicon {
+    display: none;
+  }
+  .features-section {
+    position: relative;
+    justify-content: center;
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
 }
