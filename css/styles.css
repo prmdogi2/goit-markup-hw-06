@@ -238,7 +238,6 @@ header address a {
 .features li {
   margin-bottom: 40px;
   list-style-type: none;
-  width: 264px;
 }
 .icon-icon-antenna,
 .icon-icon-clock,
@@ -257,14 +256,12 @@ header address a {
 }
 
 .featuresicon {
-  width: 264px;
   padding: 24px;
   background-color: #f4f4fd;
   border-radius: 4px;
 }
 
 .topicon {
-  width: 264px;
   height: 112px;
   display: flex;
   justify-content: center;
@@ -707,7 +704,6 @@ textarea::placeholder {
   display: block;
   margin: 0 auto;
 }
-/* 📱 Mobil Görünüm (320px – 767px) */
 @media (min-width: 320px) and (max-width: 767px) {
   .menu-button {
     display: block;
@@ -774,7 +770,11 @@ textarea::placeholder {
   }
 
   .features-section {
-    margin-top: 200px;
+    margin-top: 96px;
+    display: grid;
+    grid-template-columns:repeat(1,288px);
+    justify-content: center;
+    right: 100px;
   }
 
   .topicon {
@@ -785,6 +785,15 @@ textarea::placeholder {
     text-align: center;
     padding: 8px;
     margin-top: -140px;
+  }
+  .features-name {
+   
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+  
+    line-height: 40px;
+    letter-spacing: 2%;
   }
 
   header nav,
@@ -937,10 +946,83 @@ textarea::placeholder {
     display: none;
   }
   .features-section {
-    position: relative;
-    justify-content: center;
-    display: block;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 24px;
+    justify-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
   }
+  /*.team ul{
+  position: sticky;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }*/
+  .team ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .features-section {
+    display: flex;
+    justify-content: center; /* ortala */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px; /* kenarlardan boşluk */
+  }
+
+  .features-section .container {
+    width: 100%;
+    max-width: 720px; /* sabit hizalama sınırı */
+    margin: 0 auto; /* ortala */
+  }
+
+  .features-section .features-list {
+    top: 96px;;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 24px;
+    justify-items: center;
+    align-items: start;
+    width: 100%;
+  }
+
+  .features-section .featuresicon {
+    width: 264px;
+  }
+  .features-name {
+   
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+  
+    line-height: 40px;
+    letter-spacing: 2%;
+  }
+ 
+  .team .container {
+    display: grid;
+    justify-content: center; 
+    gap: 24px 64px;
+  }
+
+  .team ul {
+    display: grid;
+  }
+ 
+  
 }
+
+ 
+  
+
+
+
