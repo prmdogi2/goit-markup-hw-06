@@ -19,37 +19,40 @@
   <body>
     <input type="checkbox" id="mobile-menu-toggle" hidden/>
     <header>
-      <div class="container header-container">
-        <a href="#" class="logo">WEB<span class="logo-accent">STUDIO</span></a>
-        <label for="mobile-menu-toggle" class="menu-button">
-           <svg class="icon icon-menu"><use xlink:href="./images/icons.svg/symbol-defs4.svg#icon-menu">
-           
-           </use>
-           </svg>
-           </label>
-        <nav>
-          <ul>
-            <li><a class="nav-link" href="#">Studio</a></li>
-            <li><a class="nav-link" href="#">Portfolio</a></li>
-            <li><a class="nav-link" href="#">Contacts</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="contact-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contact-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>
+  <div class="container header-container">
+    <div class="header-left">
+      <a href="#" class="logo">WEB<span class="logo-accent">STUDIO</span></a>
+
+      <label for="mobile-menu-toggle" class="menu-button">
+        <svg class="icon icon-menu">
+          <use xlink:href="./images/icons.svg/symbol-defs4.svg#icon-menu"></use>
+        </svg>
+      </label>
+
+      <nav>
+        <ul>
+          <li><a class="nav-link" href="#">Studio</a></li>
+          <li><a class="nav-link" href="#">Portfolio</a></li>
+          <li><a class="nav-link" href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <address>
+        <ul>
+          <li>
+            <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</header>
+
     <nav class="mobile-nav">
       <label for="mobile-menu-toggle" class="menu-close">
          <div class="close-x" >
@@ -506,85 +509,62 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
+   <footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="first-content">
         <a href="#" class="logo">
           WEB<span class="logo-accent-active">STUDIO</span>
         </a>
-
         <p class="flow">
-          Increase the flow of customers and<br />
+          Increase the flow of customers and
           sales for your business with digital<br />
           marketing & growth solutions.
         </p>
-
-        <div class="asocial">
-          <p class="altsociala">Media</p>
-          <p class="altsocial">Social</p>
-
-          <div class="asocial-icon-wrapper">
-            <a href="https://www.instagram.com/" class="asocialmedia">
-              <svg class="icon-icon-instagram">
-                <use
-                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-instagram"
-                ></use>
-              </svg>
-            </a>
-          </div>
-
-          <div class="asocial-icon-wrapper">
-            <a href="https://www.twitter.com/" class="asocialmedia">
-              <svg class="icon-icon-twitter">
-                <use
-                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-twitter"
-                ></use>
-              </svg>
-            </a>
-          </div>
-
-          <div class="asocial-icon-wrapper">
-            <a href="https://www.facebook.com/" class="asocialmedia">
-              <svg class="icon-icon-facebook">
-                <use
-                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-facebook"
-                ></use>
-              </svg>
-            </a>
-          </div>
-
-          <div  class="asocial-icon-wrapper">
-            <a href="https://www.linkedin.com/" class="asocialmedia">
-              <svg class="icon-icon-linkedin">
-                <use
-                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
-                ></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-       <form>
-        <div class="subscribe">
-          <label for="email" class="labeltext">Subscribe</label>
-          <input
-            class="son"
-            type="text"
-            id="email"
-            name="email"
-            placeholder="E-mail"
-          />
-
-          <button type="submit" class="subbutton">
-            <span class="btn-text">Subscribe</span>
-            <svg class="send">
-              <use
-                xlink:href="./images/icons.svg/sembol-defs2.svg#icon-iconsend"
-              ></use>
-            </svg>
-          </button>
-        </div>
-        </form>
       </div>
-    </footer>
+
+      <div class="footsoc">
+        <p class="altsocial">Social Media</p>
+        <div class="asocial">
+          <a href="https://www.instagram.com/" class="asocialmedia">
+            <svg class="icon-icon-instagram">
+              <use xlink:href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a href="https://www.twitter.com/" class="asocialmedia">
+            <svg class="icon-icon-twitter">
+              <use xlink:href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/" class="asocialmedia">
+            <svg class="icon-icon-facebook">
+              <use xlink:href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/" class="asocialmedia">
+            <svg class="icon-icon-linkedin">
+              <use xlink:href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <form>
+      <div class="subscribe">
+        <label for="email" class="labeltext">Subscribe</label>
+        <input class="son" type="text" id="email" name="email" placeholder="E-mail" />
+        <button type="submit" class="subbutton">
+          <span class="btn-text">Subscribe</span>
+          <svg class="send">
+            <use xlink:href="./images/icons.svg/sembol-defs2.svg#icon-iconsend"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</footer>
+
 <form>
     <div class="modal">
       <div class="modal-content">
