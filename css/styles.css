@@ -26,8 +26,9 @@ address a:hover {
   color: rgba(64, 75, 191, 1);
 }
 header {
+  height: 72px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
   border-radius: 8px;
@@ -91,27 +92,11 @@ header address {
   cursor: pointer;
 }
 
-/*
-@media (min-width: 1158px) {
-  .menu-button {
-    display: none;
-  }
-
-  .mobile-nav {
-    display: none;
-  }
-
-  header nav,
-  header address {
-    display: flex;
-  }
-}*/
-
 .header-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 40px;
+  gap: 120px;
 }
 header .logo {
   font-weight: bold;
@@ -230,7 +215,7 @@ header address a {
 .features ul {
   list-style: none;
   padding: 0;
-  display: block;
+  display: flex;
   gap: 24px;
 }
 .features-section {
@@ -238,7 +223,6 @@ header address a {
   margin-bottom: 120px;
 }
 .features li {
-  margin-bottom: 40px;
   list-style-type: none;
 }
 .icon-icon-antenna,
@@ -957,9 +941,19 @@ textarea::placeholder {
   }
   .header-container {
     display: flex;
-    justify-content: space-between; /* sol ve sağ blok arasında boşluk */
+    justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+  }
+
+  .logo-accent {
+    color: #4d5ae5;
   }
 
   .header-left {
@@ -967,26 +961,32 @@ textarea::placeholder {
     align-items: center;
     gap: 30px;
   }
+  header {
+    display: flex;
+    gap: 120px;
+  }
 
   nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px;
     margin: 0;
     padding: 0;
   }
   .header-right {
-    margin-left: auto; 
+    margin-left: auto;
   }
 
   .header-right address ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .header-right address ul li {
-    display: block; 
+    display: block;
   }
 
   .contact-link {
@@ -1015,7 +1015,7 @@ textarea::placeholder {
     padding: 0;
     margin: 0 auto;
   }
- 
+
   .team ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1029,16 +1029,16 @@ textarea::placeholder {
 
   .features-section {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 15px; 
+    padding: 0 15px;
   }
 
   .features-section .container {
     width: 100%;
-    max-width: 720px; 
-    margin: 0 auto; 
+    max-width: 720px;
+    margin: 0 auto;
   }
 
   .features-section .features-list {
@@ -1058,7 +1058,6 @@ textarea::placeholder {
     font-weight: 700;
     font-style: Bold;
     font-size: 36px;
-
     line-height: 40px;
     letter-spacing: 2%;
   }
@@ -1197,5 +1196,27 @@ textarea::placeholder {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
+  }
+}
+@media (min-width: 1158px) {
+  .menu-button {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  header nav,
+  header address {
+    display: flex;
+    gap: 120px;
+  }
+  .team-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
   }
 }
