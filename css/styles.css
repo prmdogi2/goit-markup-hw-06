@@ -1084,7 +1084,7 @@ textarea::placeholder {
   .footer-top {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: ce;
     width: 100%;
     gap: 40px;
     flex-wrap: nowrap;
