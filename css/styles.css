@@ -630,7 +630,7 @@ label {
   height: 584px;
 }
 .labeller {
-  text-align: center;
+  text-align: start;
   justify-content: center;
   margin-bottom: 4px;
   font-weight: 400;
@@ -695,6 +695,9 @@ textarea::placeholder {
   align-items: center;
   gap: 8px;
 }
+.send-button {
+  margin-top: 20px;
+}
 .yazi {
   color: #757575;
 }
@@ -731,6 +734,89 @@ textarea::placeholder {
   margin: 0 auto;
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .butunyazi {
+    display: block;
+  }
+  .leave {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-align: center;
+    padding: 12px;
+  }
+  .atagi {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #4d5ae5;
+    display: block;
+    margin-top: 4px;
+  }
+  .icon-header {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #e7e9fc;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    width: 24px;
+    height: 24px;
+    position: initial;
+    top: 16px;
+    right: 16px;
+    align-items: center;
+    margin-left: 220px;
+    margin-bottom: 10px;
+  }
+  .input-icon-wrapper {
+    border: 1px solid #2e2f4266;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    padding: 8px 16px;
+    transition: border-color 0.3s ease;
+    width: 256px;
+    height: 40px;
+    margin-left: -10px;
+  }
+  textarea {
+    width: 256px;
+    height: 120px;
+    top: 216px;
+    border-radius: 4px;
+    border-width: 1px;
+    outline: none;
+    resize: none;
+    margin-left: -10px;
+  }
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 4px;
+    width: 288px;
+    height: 688px;
+  }
+  .labeller {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 4px;
+    font-weight: 400;
+    color: #8e8f99;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px;
+    margin-right: 200px;
+  }
+  .mobile-social {
+    margin-left: 40px;
+  }
   .menu-button {
     display: block;
     left: 150px;
@@ -773,7 +859,7 @@ textarea::placeholder {
     height: 24px;
     align-items: center;
     position: fixed;
-    left: 334px;
+    left: 300px;
     top: 28px;
   }
   .close-x:hover {
@@ -802,21 +888,32 @@ textarea::placeholder {
     justify-content: center;
     right: 100px;
   }
+  .features-section li {
+    margin-bottom: 62px;
+  }
+
+  .features-section li:last-child {
+    margin-bottom: 0;
+  }
+  .featuresp {
+    color: #434455;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+  }
 
   .topicon {
     visibility: hidden;
   }
-
   .features-name {
     text-align: center;
     padding: 8px;
     margin-top: -140px;
-  }
-  .features-name {
     font-weight: 700;
     font-style: Bold;
     font-size: 36px;
-
     line-height: 40px;
     letter-spacing: 2%;
   }
@@ -841,7 +938,7 @@ textarea::placeholder {
   .mobile-nav .social .social-icon-wrapper {
     position: relative;
     right: 40px;
-    margin: 20px;
+    margin: 10px;
   }
 
   #mobile-menu-toggle:checked ~ .mobile-nav {
@@ -853,7 +950,12 @@ textarea::placeholder {
     opacity: 0;
     visibility: hidden;
   }
-
+  .team li {
+    margin-bottom: 62px;
+  }
+  .team li:last-child {
+    margin-bottom: 0;
+  }
   .team {
     background-color: #f4f4fd;
   }
@@ -880,6 +982,12 @@ textarea::placeholder {
     text-align: center;
     gap: 24px;
   }
+  .portfolio li{
+    margin-bottom: 38px;
+  }
+  .portfolio li:last-child{
+    margin-bottom: 0;
+  }
 
   .footer .flow {
     margin: 0 auto;
@@ -895,10 +1003,7 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
   }
-  .social {
-    position: relative;
-    left: 20px;
-  }
+
   .asocial {
     position: relative;
     left: 4px;
@@ -927,6 +1032,9 @@ textarea::placeholder {
   .nav-linka {
     position: relative;
     right: 20px;
+  }
+  .asocial{
+    margin-left: 40px;
   }
 }
 
