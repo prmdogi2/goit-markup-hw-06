@@ -1273,7 +1273,7 @@ textarea::placeholder {
     gap: 10px;
     flex-wrap: wrap;
   }
-  .portfolio ul{
+  .portfolio ul {
     gap: 72px 24px;
   }
 
@@ -1353,7 +1353,7 @@ textarea::placeholder {
     align-items: flex-start;
     gap: 120px;
   }
-   .hero {
+  .hero {
     background-image: url("../images/Dark-bg-1.jpg");
   }
 
