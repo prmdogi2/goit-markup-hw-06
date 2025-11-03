@@ -451,6 +451,11 @@ header address a {
   gap: 16px;
 }
 
+.flow {
+  display: flex;
+  position: relative;
+  top: 16px;
+}
 .asocial-icon-wrapper,
 .asocialmedia {
   width: 40px;
@@ -469,7 +474,6 @@ header address a {
 label {
   display: flex;
   flex-direction: column;
-
   font-weight: 500;
 }
 
@@ -534,12 +538,15 @@ label {
   gap: 15px;
 }
 
-.subscribe {
+form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
+.subscribe {
+  display: flex;
+  position: relative;
+}
 .subbutton {
   display: flex;
   align-items: center;
@@ -875,7 +882,7 @@ textarea::placeholder {
   .hero {
     background-image: none;
     text-align: center;
-    background-image: url("/images/Dark-bg-2.jpg");
+    background-image: url("../images/Dark-bg-2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -982,16 +989,17 @@ textarea::placeholder {
     text-align: center;
     gap: 24px;
   }
-  .portfolio li{
+  .portfolio li {
     margin-bottom: 38px;
   }
-  .portfolio li:last-child{
+  .portfolio li:last-child {
     margin-bottom: 0;
   }
-
-  .footer .flow {
-    margin: 0 auto;
-    padding-bottom: 30px;
+  .first-content {
+    margin-bottom: 62px;
+  }
+  .footsoc {
+    margin-bottom: 62px;
   }
 
   .altsocial {
@@ -1020,7 +1028,11 @@ textarea::placeholder {
     margin-right: 0;
     text-align: center;
   }
-
+  .labeltext {
+    display: flex;
+    position: relative;
+    bottom: 16px;
+  }
   .subbutton {
     margin-left: 0;
   }
@@ -1033,7 +1045,7 @@ textarea::placeholder {
     position: relative;
     right: 20px;
   }
-  .asocial{
+  .asocial {
     margin-left: 40px;
   }
 }
@@ -1097,7 +1109,7 @@ textarea::placeholder {
   }
 
   .hero {
-    background-image: url("/images/Dark-bg-3.jpg");
+    background-image: url("../images/Dark-bg-3.jpg");
   }
 
   .topicon {
@@ -1112,12 +1124,13 @@ textarea::placeholder {
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
+    justify-content: left;
   }
 
   .team ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 62px 24px;
     justify-items: center;
     width: 100%;
     box-sizing: border-box;
@@ -1225,10 +1238,6 @@ textarea::placeholder {
     flex-wrap: wrap;
   }
 
-  .labeltext {
-    font-weight: bold;
-  }
-
   .son {
     padding: 10px 15px;
     border: 1px solid #ccc;
@@ -1238,33 +1247,23 @@ textarea::placeholder {
 
   .subbutton {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background-color: #4d5ae5;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
+    position: relative;
+    top: 0;
   }
-  form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  .footer-top {
+    margin-bottom: 62px;
   }
 
   .subscribe {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+    flex-direction: row;
+    justify-content: left;
   }
 
   .labeltext {
-    font-weight: bold;
-    font-size: 18px;
-    color: #fff;
+    display: flex;
+    position: relative;
+    bottom: 16px;
   }
 
   .sub-bottom {
@@ -1273,6 +1272,9 @@ textarea::placeholder {
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+  }
+  .portfolio ul{
+    gap: 72px 24px;
   }
 
   .son {
@@ -1324,6 +1326,7 @@ textarea::placeholder {
     display: grid;
     flex-direction: column;
     grid-template-columns: repeat(3, 1fr);
+    gap: 48px 24px;
   }
   .features-section ul {
     display: grid;
@@ -1354,10 +1357,20 @@ textarea::placeholder {
   .first-content {
     max-width: 264px;
   }
-
-  .subscribe {
+  form {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+
+  .subscribe {
+    display: flex;
+    position: relative;
+    gap: 20px;
+  }
+  .subbutton {
+    display: flex;
+    position: relative;
+    top: 0;
   }
 }
