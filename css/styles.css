@@ -1353,6 +1353,9 @@ textarea::placeholder {
     align-items: flex-start;
     gap: 120px;
   }
+   .hero {
+    background-image: url("../images/Dark-bg-1.jpg");
+  }
 
   .first-content {
     max-width: 264px;
