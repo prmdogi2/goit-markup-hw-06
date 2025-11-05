@@ -1376,4 +1376,30 @@ textarea::placeholder {
     position: relative;
     top: 0;
   }
+}@media (max-width: 1157px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
 }
+@media (min-resolution: 2x) {
+  .hero {
+    background-image: url('../images/Dark-bg-1@2x.jpg');
+  }
+}
+@media (min-resolution: 3x) {
+  .hero {
+    background-image: url('../images/Dark-bg-1@3x.jpg');
+  }
+}
+
+
+
+
