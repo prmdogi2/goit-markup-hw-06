@@ -29,8 +29,7 @@ header {
   height: 72px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
+  align-items: center; 
   border-radius: 8px;
   background-color: white;
 }
@@ -150,7 +149,6 @@ header address a {
 .container {
   align-items: center;
   margin: 0 auto;
-  padding: 0 15px;
 }
 .section {
   padding: 120px 0;
@@ -1058,7 +1056,6 @@ textarea::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
   }
   .logo {
     font-weight: bold;
